@@ -2,7 +2,7 @@
 /**
  *main Entry point
  *
- *Description: print from 0 to 9 by using putchar two times
+ *Description: print from 0 to 9 by using putchar two times in int value
  *
  *Return: Always 0 (Success)
 */
