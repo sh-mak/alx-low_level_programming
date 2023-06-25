@@ -2,7 +2,7 @@
 /**
  *main Entry point
  *
- *Description: print from 0 to 9 by using putchar two times in int value
+ *Description: print all single digit numbers of base 10 starting from 0
  *
  *Return: Always 0 (Success)
 */
