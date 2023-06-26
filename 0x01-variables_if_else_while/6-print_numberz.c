@@ -2,7 +2,7 @@
 /**
  *main Entry point
  *
- *Description: print all single digit numbers of base 10 starting from 0
+ *Description: print single digit numbers of base 10
  *
  *Return: Always 0 (Success)
 */
