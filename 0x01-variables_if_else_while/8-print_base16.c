@@ -1,8 +1,6 @@
 #include <stdio.h>
 /**
- *main Entry point
- *
- *Description: print numbers of base16 in small
+ *main - print numbers of base16 in small
  *
  *Return: Always 0 (Success)
 */
