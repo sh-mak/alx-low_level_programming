@@ -1,8 +1,6 @@
 #include <stdio.h>
 /**
- *main Entry point
- *
- *Description: print a - z in reverce
+ *main - print a - z in reverce
  *
  *Return: Always 0 (Success)
 */
