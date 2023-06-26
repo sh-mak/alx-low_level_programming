@@ -1,8 +1,6 @@
 #include <stdio.h>
 /**
- *main Entry point
- *
- *Description: print single digit numbers of base 10
+ *main - print single digit numbers of base 10
  *
  *Return: Always 0 (Success)
 */
