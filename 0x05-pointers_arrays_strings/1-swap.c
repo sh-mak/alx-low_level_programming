@@ -7,7 +7,7 @@
  * Return: nothing
  */
 void swap_int(int *a, int *b)
-	/* the functoin that swaps the values of two integers */
+/* the functoin swap_int  that swaps the values of two integers */
 {
 	int temp;
 
