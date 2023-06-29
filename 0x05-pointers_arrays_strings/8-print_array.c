@@ -17,6 +17,6 @@ void print_array(int *a, int n)
 				printf(", ");
 	}
 
-	printf(araay = "%d", t,'\n');
+	printf(araay = "%d", '\n');
 
 }
