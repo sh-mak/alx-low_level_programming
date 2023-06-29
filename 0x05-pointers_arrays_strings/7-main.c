@@ -1,7 +1,9 @@
-#include "main.h"
+#include <stdio.h>
+
+void puts_half(char *);
 
 /**
- * main - check the code
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
