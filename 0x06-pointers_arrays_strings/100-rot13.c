@@ -6,20 +6,24 @@
  */
 char *rot13(char *s)
 {
-	int i, j;
-	char data1[] =
+	int i;
+	char rot13[] =
 		"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char datarot[] =
+	char ROT13[] =
 		"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char *ptr = s;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
-		for (j = 0; j < 52; j++)
+		for (i = 0; i <= 52; i++)
 		{
-			if (s[i] == data1[j])
-				s[i] = datarot[j];
+			if (*s == rot13[i])
+			{
+				*s = ROT13[i];
 			break;
+			}
 		}
+		s++;
 	}
-	return (S);
+	return (ptr);
 }
