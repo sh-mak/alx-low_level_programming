@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
- * main Entry point
- *
- * Description:  function that checks for alphabetic character.
- *
+ *_isalpha - function that checks for alphabetic character.
+ *@c: take input from other function
 */
 int _isalpha(int c)
 {
