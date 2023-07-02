@@ -1,17 +1,15 @@
 #include "main.h"
 
 /**
- * main Entry point
- * function that prints the sign of a number.
- *Returns 1 and prints + if n is greater than zero
-Returns 0 and prints 0 if n is zero
-Returns -1 and prints - if n is less than zero
- *
- *Return: Always 0 "Success"
+ *print_sign - print plus if n is greater
+ than zero.
+ *0 if n is zero and - if n is less than 0
+ *@n: takes integer type input for function
+ *Return: 1 if +, 0 if 0 and -1 if -
 */
 int print_sign(int n)
 {
-	if(n < 0)
+	if (n < 0)
 	{
 		_putchar(43);
 	retur(1);
@@ -26,6 +24,4 @@ int print_sign(int n)
 		_putchar(45);
 		return (-1);
 	}
-	
-
 }
