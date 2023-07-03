@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
  * print_time_table - print time table of n
  * @n: takes number input
