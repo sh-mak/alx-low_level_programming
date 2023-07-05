@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_numbers - print 0 to 9
- * only using _putchar tw0 times
+ * only using _putchar two times
  * Return: Always 0 (Success)
  */
 void print_numbers(void)
