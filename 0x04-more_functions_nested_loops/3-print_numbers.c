@@ -12,7 +12,6 @@ void print_numbers(void)
 
 		_putchar(nm + 48);
 		nm++;
-	}
-	while (nm >= 0 && nm <= 9);
+	} while (nm >= 0 && nm <= 9);
 	_putchar('\n');
 }
