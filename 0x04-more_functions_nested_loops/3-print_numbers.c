@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * print_numbers - print 0 to 9 only using _putchar twice
+ * print_numbers - print 0 to 9
+ * only using _putchar tw0 times
  * Return: Always 0 (Success)
  */
 void print_numbers(void)
