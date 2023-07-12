@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * *argstostr - concatenates all the arguments of programs
  * @ac: integer input
@@ -8,32 +9,37 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, n, r = 0, l = 0;
+	int i = 0, n = 0, r = 0, l = 0;
 	char *str;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	for (i = 0; i < ac; i++)
+	while (r < ac)
 	{
-		for (n = 0; av[i][n]; n++)
+		while (av[r][n])
+		{
 			i++;
+			n++;
+		}
+		n = 0;
+		r++
 	}
-	l += ac;
-
-	str = malloc(sizeof(char) * l + 1);
-		if (str == NULL)
-			return (NULL);
-	for (i = 0; i < ac; i++)
+	str = malloc((sizeof(char) * i) + ac + 1);
+	n = 0;
+	while (av[n])
 	{
-		for (n = 0; av[i][n]; n++)
+		while (av[n][r])
 		{
-		str[r] = av[i][n];
-		r++;
+			str[l] = av[n][r];
+			l++;
+			r++;
 		}
-		if (str[r] == '\0')
-		{
-			str[r++] = '\n';
-		}
+		str[l] = '\n';
+		r = 0;
+		l++;
+		n++
 	}
+	l++;
+	str[l] = '\n';
 	return (str);
 }
