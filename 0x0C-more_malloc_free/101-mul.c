@@ -25,16 +25,16 @@ void _puts(char *str)
 int  _atoi(const char *s)
 {
 	int sign = 1;
-	unsigned long int  resp = 0, 1stnum, i;
+	unsigned long int  resp = 0, stnum, i;
 
-	for (1stnum = 0; !(s[1stnum] >= 48 && s[1stnum] <= 57); 1stnum++)
+	for (stnum = 0; !(s[stnum] >= 48 && s[stnum] <= 57); stnum++)
 	{
-		if (s[1stnum] == '-')
+		if (s[stnum] == '-')
 		{
 			sign *= -1;
 		}
 	}
-	for (i = 1stnum; s[i] >= 48 && s[i] <= 57; i++)
+	for (i = stnum; s[i] >= 48 && s[i] <= 57; i++)
 	{
 		resp *= 10;
 		resp += (s[i] - 48);
@@ -71,7 +71,7 @@ int main(int argc, char const *argv[])
 		_puts("Error ");
 		exit(98);
 	}
-	print_int(_atoi(argv[1]) * _atoi(argv[2]))
+	print_int(_atoi(argv[1]) * _atoi(argv[2]));
 		_putchar('\n');
 	return (0);
 }
