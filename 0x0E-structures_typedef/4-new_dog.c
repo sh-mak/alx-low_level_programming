@@ -19,7 +19,7 @@ int _strlen(const char *str)
  * _strcopy - function return valiabale with
  * string copy
  * @src: string to copy
- * @dest: copy string 
+ * @dest: copy string
  * Return: dest
  */
 char *_strcopy(char *dest, char *src)
@@ -37,8 +37,7 @@ char *_strcopy(char *dest, char *src)
  * @name: dog's name
  * @age: dog's age
  * @owner: dog's owner
- * Rteurn: struct pointer
- * NULL if function fails
+ * Rteurn: new struct dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
