@@ -30,12 +30,12 @@ int op_mul(int a, int b)
 	return (a * b);
 }
 /**
- * op_dev - devides two integers
+ * op_div - devides two integers
  * @a: 1st integer
  * @b: 2nd integer
  * Return: quotient
  */
-int op_dev(int a, int b)
+int op_div(int a, int b)
 {
 	return (a / b);
 }
