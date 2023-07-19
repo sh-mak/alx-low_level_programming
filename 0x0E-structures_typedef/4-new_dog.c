@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "dog.h"
 /**
  * _strlen - function gets length of string
@@ -11,7 +12,7 @@ int _strlen(const char *str)
 
 	while (*str++)
 		len++;
-	return (len)
+	return (len);
 }
 
 /**
