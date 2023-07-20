@@ -35,7 +35,7 @@ void format_float(char *separator, va_list ap)
  */
 void format_string(char *separator, va_list ap)
 {
-	char *str = va_arg(ap, char *)
+	char *str = va_arg(ap, char *);
 
 		switch ((int)(!str))
 	case 1:
@@ -49,7 +49,7 @@ void format_string(char *separator, va_list ap)
 
 void print_all(const char * const format, ...)
 {
-	| int i = 0, j;
+	 int i = 0, j;
 	char *separator = "";
 	va_list ap;
 
@@ -65,14 +65,14 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (token[j].token)
+		while (tokens[j].token)
 		{
-			if (format[i] == token[j].token[0])
+			if (format[i] == tokens[j].token[0])
 			{
-				token[j].f(separator, ap);
+				tokens[j].f(separator, ap);
 				separator = ", ";
 			}
-			j++
+			j++;
 		}
 		i++;
 	}
